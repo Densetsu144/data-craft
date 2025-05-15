@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data_Craft - Sumit Shakya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color:rgb(0, 0, 0);
+      background: url('background.gif') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(110, 209, 255, 0.17); /* overlay for text readability */
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.93);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.01);
+    }
+
+    h1, h2 {
+      color: #007acc;
+      transition: color 0.3s ease;
+    }
+
+    h1:hover, h2:hover {
+      color: #005f99;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .contact {
+      background:rgb(150, 150, 150);
+      padding: 20px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .contact:hover {
+      background:rgba(91, 213, 250, 0.86);
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #005f99;
+    }
+
+    .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007acc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background: #005f99;
+    transform: scale(1.05);
+    color: white; /* 👈 THIS LINE FIXES IT */
+}
+
+
+    .button:hover {
+      background: #005f99;
+      transform: scale(1.05);
+    }
+
+    .pricing-table {
+      background:rgba(206, 206, 206, 0.83);
+      padding: 20px;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .pricing-table:hover {
+      background: rgba(91, 213, 250, 0.86);
+    }
+
+    .pricing-table ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pricing-table li {
+      margin-bottom: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .pricing-table li:hover {
+      transform: translateX(5px);
+    }
+
+    .offer {
+      background-color: #fff9c4;
+      padding: 15px;
+      border-left: 5px solid #fbc02d;
+      margin-top: 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .offer:hover {
+      background-color: #fff59d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Data_Craft</h1>
+    <p><em>Turning data into clarity and results</em></p>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>Hi! I’m Sumit Shakya from Madhya Pradesh, India. I specialize in Excel-based data entry, cleaning, and analysis. I help small businesses and entrepreneurs manage their data efficiently and accurately.</p>
+    </div>
+
+    <div class="section">
+      <h2>My Services</h2>
+      <ul>
+        <li>✔ Data Entry (manual & automated)</li>
+        <li>✔ Excel Data Cleaning (remove duplicates, fix formatting)</li>
+        <li>✔ Sorting, Filtering, and Summarizing Data</li>
+        <li>✔ Creating Dashboards & Charts</li>
+        <li>✔ Applying Formulas, VLOOKUP, Conditional Formatting</li>
+      </ul>
+    </div>
+
+    <div class="section pricing-table">
+      <h2>Pricing Plans</h2>
+      <ul>
+        <li>📌 <strong>Data Entry</strong>: $10 for 2,000 rows (max 5 columns)</li>
+        <li>📌 <strong>Data Cleaning</strong>: $10 for 25,000 rows (max 20 columns)</li>
+        <li>📌 <strong>Data Analysis</strong>: $20 for 25,000 rows (max 20 columns)</li>
+        <li>📌 <strong>Dashboard Creation</strong>: $20 for 25,000 rows (max 20 columns)</li>
+      </ul>
+      <div class="offer">
+        💡 <strong>Special Offer:</strong> Got 10–100 files? Enjoy discounted pricing!<br>
+        - Data Entry & Cleaning: <strong>$7</strong> per file<br>
+        - Analysis & Dashboards: <strong>$15</strong> per file
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why Choose Me?</h2>
+      <ul>
+        <li>✅ Accurate and reliable</li>
+        <li>✅ Fast delivery</li>
+        <li>✅ Affordable for small businesses</li>
+        <li>✅ Free sample on request</li>
+      </ul>
+    </div>
+
+    <div class="section contact">
+      <h2>Contact Me</h2>
+      <p>📧 Email: sk7415718643@gmail.com<br>
+      📱 WhatsApp: +91-7477298511</p>
+      <a href="mailto:sumitshakya123@example.com" class="button">Send a Message</a>
+    </div>
+  </div>
+</body>
+</html>
